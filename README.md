@@ -13,21 +13,26 @@ Running django and postgresql database in container
  ```bash
    git clone https://github.com/yourusername/django-postgresql-docker.git
    cd django-postgresql-docker
+   ```
 2. Copy env.example into .env file
 
-   ```bash
+ ```bash
    cp env.example .env
+   ```
+   
 
 3. Fill the postgresql credentials in .env file
 
 4. Run the following docker-compose command to build and run the project
 
-   ```bash
+```bash
    docker-compose up --build 
+   ```
 5. Open another instance of command prompt or terminal and run the following 
 command to run database migrations  
 
-   ```bash
-    docker-compose run web python3 manage.py migrate    
+```bash
+    docker-compose run web python3 manage.py migrate  
+    ```  
 
 6. Visit http://localhost:8000/employee to acess the application   

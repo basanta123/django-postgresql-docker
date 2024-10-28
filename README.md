@@ -8,7 +8,7 @@ Running django and postgresql database in container
 2. docker-compose installed on your machine
 
 ## Installation
-1.Clone the repository
+1. Clone the repository
 
  ```bash
    git clone https://github.com/yourusername/django-postgresql-docker.git
@@ -32,7 +32,7 @@ Running django and postgresql database in container
 command to run database migrations  
 
 ```bash
-    docker-compose run web python3 manage.py migrate  
+   docker-compose run web python3 manage.py migrate  
     ```  
 
 6. Visit http://localhost:8000/employee to acess the application   
